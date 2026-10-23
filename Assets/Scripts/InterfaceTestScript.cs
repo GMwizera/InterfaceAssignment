@@ -3,12 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-// Creates one of each shape and prints its area and perimeter to the Console.
-//
-// SOLID principle: Dependency Inversion Principle (DIP).
-// High-level code should depend on abstractions, not on concrete classes.
-// Each shape is stored as an IShape, so this script only relies on the
-// IShape contract and not on how each shape does its calculations.
 public class InterfaceTestScript : MonoBehaviour
 {
     // Start is called before the first frame update
