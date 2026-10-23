@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class Circle : IShape
 {
-    int diameter;
+    int diameter = 10;
     public void CalculateArea()
     {
         float radius = CalculateRadius();
-        Debug.Log("Areaa (Circle) = " + Mathf.PI * radius * radius);
+        Debug.Log("Area (Circle) = " + Mathf.PI * radius * radius);
     }
 
     public float CalculateRadius()
@@ -18,7 +18,7 @@ public class Circle : IShape
     public void CalculatePerimeter()
     {
        float radius = CalculateRadius();
-        Debug.Log("Perimeter (Circle) = " + 2f * Mathf.PI * CalculateRadius());
+        Debug.Log("Perimeter (Circle) = " + 2f * Mathf.PI * radius);
         
     }
 }
